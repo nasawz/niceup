@@ -11,7 +11,7 @@
       "prettier --write",
       "git add ."
     ],
-    "mini/src/**/*.{ts,tsx,scss,less,md}": [
+    "mini/src/**/*.{ts,tsx}": [
       "prettier --write",
       "git add ."
     ],
