@@ -3,7 +3,7 @@
   "version": "2.0",
   "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
   "framework": {
-    "name": "niceup",
+    "name": "niceup-1",
     "hooks": {
       "postDeploy": {
         "type": "callFunction",
@@ -323,7 +323,7 @@
         "deployManagePath": {
           "description": "部署路径",
           "required": true,
-          "default": "/data-max/"
+          "default": "/manage/"
         },
         "private_key_id": {
           "description": "自定义登录密钥ID",
