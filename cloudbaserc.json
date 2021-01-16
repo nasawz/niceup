@@ -71,9 +71,7 @@
               "timeout": 60,
               "envVariables": {
                 "ADMIN_USER_NAME": "{{env.administratorName}}",
-                "ADMIN_PASS_WORD": "{{env.administratorPassword}}",
-                "PRIVATE_KEY_ID": "{{env.private_key_id}}",
-                "PRIVATE_KEY": "{{env.private_key}}"
+                "ADMIN_PASS_WORD": "{{env.administratorPassword}}"
               },
               "installDependency": true,
               "handler": "index.main"
