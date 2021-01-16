@@ -1,0 +1,49 @@
+declare namespace JSX {
+  interface IntrinsicElements {
+    // 基础组件
+    'van-button': any;
+    'van-cell': any;
+    'van-cell-group': any;
+    'van-icon': any;
+    'van-image': any;
+    'van-row': any;
+    'van-col': any;
+    'van-popup': any;
+    'van-transition': any;
+    // 反馈组件
+    'van-action-sheet': any;
+    'van-dialog': any;
+    'van-dropdown-menu': any;
+    'van-dropdown-item': any;
+    'van-loading': any;
+    'van-notify': any;
+    'van-overlay': any;
+    'van-share-sheet': any;
+    'van-swipe-cell': any;
+    'van-toast': any;
+    // 导航组件
+    'van-grid': any;
+    'van-grid-item': any;
+    'van-sidebar': any;
+    'van-sidebar-item': any;
+    'van-nav-bar': any;
+    'van-tab': any;
+    'van-tabs': any;
+    'van-tabbar': any;
+    'van-tabbar-item': any;
+    // 展示组件
+    'van-sticky': any;
+    'van-notice-bar': any;
+    'van-count-down': any;
+    'van-tag': any;
+    'van-empty': any;
+    // 业务组件
+    'van-goods-action': any;
+    'van-goods-action-icon': any;
+    'van-goods-action-button': any;
+    'van-submit-bar': any;
+    'van-card': any;
+    // 表单组件
+    'van-stepper': any;
+  }
+}

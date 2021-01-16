@@ -1,0 +1,53 @@
+.euiRangeTicks {
+  position: absolute;
+  left: ($euiRangeThumbWidth / 2);
+  right: ($euiRangeThumbWidth / 2);
+  top: $euiSizeS;
+  display: flex;
+}
+
+.euiRangeTick {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  font-size: $euiFontSizeXS;
+  position: relative;
+  padding-top: $euiSize;
+
+  &::before {
+    @include size($euiSizeXS);
+
+    content: '';
+    background-color: $euiColorDarkShade;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(50% - #{($euiSizeXS/2)});
+  }
+
+  &--isCustom {
+    position: absolute;
+    transform: translateX(-50%);
+  }
+
+  &:enabled:hover,
+  &:focus,
+  &--selected {
+    color: $euiColorPrimary;
+  }
+
+  &--selected {
+    font-weight: $euiFontWeightMedium;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.euiRangeTicks--compressed {
+  top: $euiSizeS - 2px;
+
+  .euiRangeTick {
+    padding-top: $euiSize - 2px;
+  }
+}

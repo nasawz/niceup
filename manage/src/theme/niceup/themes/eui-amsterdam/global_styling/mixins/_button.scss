@@ -1,0 +1,41 @@
+@mixin euiButton {
+  @include euiButtonBase;
+  @include euiFont;
+  @include euiFontSize;
+
+  font-weight: $euiFontWeightMedium;
+  text-decoration: none;
+  transition: all $euiAnimSpeedNormal $euiAnimSlightBounce;
+
+  // sass-lint:disable mixins-before-declarations
+  // focus states should come after all default styles
+  @include euiButtonFocus;
+
+  &:hover:not([class*='isDisabled']),
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+// Creates the Amsterdam style of button with a transparent background
+@mixin euiButtonDefaultStyle($color, $transparency: 0.8) {
+  $percentConversion: $transparency * 100%;
+  // This variable simulates the possibly darkest background the button could be on
+  // Simulates the 20% opaque color on top of the page background color
+  $backgroundColorSimulated: mix(
+    $euiPageBackgroundColor,
+    $color,
+    $percentConversion
+  );
+  // Then we can calculate the darkest text color needed
+  color: makeHighContrastColor($color, $backgroundColorSimulated);
+  // But still use transparency
+  background-color: transparentize($color, $transparency);
+
+  &:not([class*='isDisabled']) {
+    &:hover,
+    &:focus {
+      background-color: transparentize($color, lightOrDarkTheme(0.9, 0.65));
+    }
+  }
+}

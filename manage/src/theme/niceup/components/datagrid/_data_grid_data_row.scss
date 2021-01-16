@@ -1,0 +1,218 @@
+.euiDataGridRow {
+  display: inline-flex;
+  min-width: 100%; // Needed to prevent wraps. Inline flex is tricky
+}
+
+@include euiDataGridRowCell {
+  @include euiFontSizeS;
+
+  padding: $euiDataGridCellPaddingM;
+  border-right: $euiDataGridVerticalBorder;
+  border-bottom: $euiBorderThin;
+  flex: 0 0 auto;
+  background: $euiColorEmptyShade;
+  position: relative;
+  align-items: center;
+  display: flex;
+
+  // Hack to allow for all the focus guard stuff
+  > * {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &:first-of-type {
+    border-left: $euiBorderThin;
+  }
+
+  &:last-of-type {
+    border-right-color: $euiBorderColor;
+  }
+
+  &:focus {
+    @include euiDataGridCellFocus;
+    margin-top: -1px;
+  }
+
+  &:focus,
+  &:hover {
+    .euiDataGridRowCell__expandButtonIcon {
+      margin-left: $euiDataGridCellPaddingM;
+      width: $euiSizeM;
+      background: $euiColorPrimary; // Needed to prevent the bg-color of .euiButtonIcon--text:focus
+    }
+
+    .euiDataGridRowCell__actionButtonIcon {
+      margin-left: $euiDataGridCellPaddingM;
+      width: $euiSizeM;
+    }
+  }
+
+  // Only add the transition effect on hover, so that it is instantaneous on focus
+  // Long delays on hover to mitigate the accordion effect
+  &:hover {
+    .euiDataGridRowCell__expandButtonIcon {
+      transition: margin $euiAnimSpeedFast 1000ms,
+        width $euiAnimSpeedFast 1000ms;
+    }
+
+    .euiDataGridRowCell__actionButtonIcon {
+      transition: margin $euiAnimSpeedFast 1000ms,
+        width $euiAnimSpeedFast 1000ms;
+    }
+  }
+
+  &:focus:not(:first-of-type) {
+    // Needed because the focus state adds a border, which needs to be subtracted from padding
+    padding-left: $euiDataGridCellPaddingM - 1px;
+  }
+
+  &.euiDataGridRowCell--numeric {
+    text-align: right;
+  }
+
+  &.euiDataGridRowCell--currency {
+    text-align: right;
+  }
+
+  &.euiDataGridRowCell--boolean {
+    text-transform: capitalize;
+  }
+
+  // We only truncate if the cell is not a control column.
+  &:not(.euiDataGridRowCell--controlColumn) {
+    .euiDataGridRowCell__content,
+    .euiDataGridRowCell__truncate,
+    .euiDataGridRowCell__expandContent {
+      @include euiTextTruncate;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+
+.euiDataGridRowCell__popover {
+  @include euiScrollBar;
+  overflow: auto;
+  // sass-lint:disable-block no-important
+  max-width: 400px !important;
+  max-height: 400px !important;
+}
+
+.euiDataGridRowCell__expand {
+  width: 100%;
+  max-width: 100%;
+}
+
+.euiDataGridRowCell__expandFlex {
+  display: flex;
+  align-items: center;
+}
+
+.euiDataGridRowCell__expandContent {
+  flex-grow: 1;
+}
+
+.euiDataGridRowCell__expandButton {
+  display: flex;
+  flex-grow: 0;
+}
+
+.euiDataGridRowCell__expandButtonIcon {
+  height: $euiSizeM;
+  min-height: $euiSizeM;
+  background: $euiColorPrimary;
+  border-radius: $euiBorderRadius / 2;
+  padding: 0;
+  width: 0;
+  min-width: 0;
+  overflow: hidden;
+  transition: none; // Have to take out the generic transition so it is instaneous on focus
+
+  &-isActive {
+    margin-left: $euiDataGridCellPaddingM;
+    width: $euiSizeM;
+  }
+}
+
+.euiDataGridRowCell__actionButtonIcon {
+  height: $euiSizeM;
+  min-height: $euiSizeM;
+  border-radius: $euiBorderRadius / 2;
+  padding: 0;
+  width: 0;
+  min-width: 0;
+  overflow: hidden;
+  transition: none; // Have to take out the generic transition so it is instaneous on focus
+}
+
+// Row highlights
+@include euiDataGridStyles(rowHoverHighlight) {
+  .euiDataGridRow:hover {
+    @include euiDataGridRowCell {
+      // sass-lint:disable-block no-important
+      // Needed to overtake striping
+      background-color: $euiColorHighlight !important;
+    }
+  }
+}
+
+// Stripes
+@include euiDataGridStyles(stripes) {
+  .euiDataGridRow:nth-child(odd) {
+    @include euiDataGridRowCell {
+      background: $euiColorLightestShade;
+    }
+  }
+}
+
+// Border alternates
+@include euiDataGridStyles(bordersNone) {
+  @include euiDataGridRowCell {
+    // sass-lint:disable-block no-important
+    border-color: transparent !important;
+  }
+}
+
+@include euiDataGridStyles(bordersHorizontal) {
+  @include euiDataGridRowCell {
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+// Font alternates
+@include euiDataGridStyles(fontSizeSmall) {
+  @include euiDataGridRowCell {
+    @include euiFontSizeXS;
+  }
+}
+
+@include euiDataGridStyles(fontSizeLarge) {
+  @include euiDataGridRowCell {
+    @include euiFontSize;
+  }
+}
+
+// Padding alternates
+@include euiDataGridStyles(paddingSmall) {
+  @include euiDataGridRowCell {
+    padding: $euiDataGridCellPaddingS;
+
+    &:focus:not(:first-of-type) {
+      // Needed because the focus state adds a border, which needs to be subtracted from padding
+      padding-left: $euiDataGridCellPaddingS - 1px;
+    }
+  }
+}
+
+@include euiDataGridStyles(paddingLarge) {
+  @include euiDataGridRowCell {
+    padding: $euiDataGridCellPaddingL;
+
+    &:focus:not(:first-of-type) {
+      // Needed because the focus state adds a border, which needs to be subtracted from padding
+      padding-left: $euiDataGridCellPaddingL - 1px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.euiButtonIcon {
+  @include euiButton;
+
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  height: auto;
+  min-height: $euiSizeL;
+  min-width: $euiSizeL;
+  line-height: 0; // ensures the icon creates the line-height and so it's always vertically centered
+  padding: $euiSizeXS;
+  border-radius: $euiBorderRadius;
+
+  & > svg {
+    // prevents the element and its children from receiving any pointer events to fix not bubbling click event in Safari
+    // https://stackoverflow.com/questions/24078524/svg-click-events-not-firing-bubbling-when-using-use-element
+    pointer-events: none;
+  }
+
+  &:disabled {
+    color: $euiButtonColorDisabledText;
+    pointer-events: none;
+
+    .euiButtonIcon__icon {
+      pointer-events: auto;
+      cursor: not-allowed;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      text-decoration: none;
+    }
+  }
+}
+
+// Create button modifiers based upon the map.
+@each $name, $color in $euiButtonIconTypes {
+  .euiButtonIcon--#{$name} {
+    color: $color;
+
+    &:focus {
+      background-color: transparentize($color, 0.9);
+    }
+
+    &:hover,
+    &:focus {
+      @if ($name == 'disabled') {
+        cursor: not-allowed;
+      }
+    }
+  }
+}

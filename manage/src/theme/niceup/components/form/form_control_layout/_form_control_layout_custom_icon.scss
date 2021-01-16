@@ -1,0 +1,27 @@
+.euiFormControlLayoutCustomIcon {
+  pointer-events: none;
+
+  .euiFormControlLayoutCustomIcon__icon {
+    transform: translateY(-1px);
+  }
+}
+
+.euiFormControlLayoutCustomIcon--clickable {
+  @include size($euiSize);
+
+  pointer-events: all;
+
+  .euiFormControlLayoutCustomIcon__icon {
+    vertical-align: baseline;
+    transform: none;
+  }
+
+  &:focus {
+    @include euiFocusRing;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    color: $euiFormControlDisabledColor;
+  }
+}

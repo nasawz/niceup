@@ -1,0 +1,8 @@
+@import '../eui/eui_colors_dark.scss';
+
+// Core
+$euiColorPrimary: #238cff;
+
+// Contrasty text variants
+$euiColorPrimaryText: $euiColorPrimary;
+$euiColorPrimaryText: makeHighContrastColor($euiColorPrimary);

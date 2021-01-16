@@ -1,0 +1,1 @@
+(wx["webpackJsonp"]=wx["webpackJsonp"]||[]).push([[59],{148:function(o,n,t){"use strict";t.r(n);var p=t(5);Object(p["a"])({props:{dot:Boolean,info:null,customStyle:String}})}},[[148,0,1,2]]]);

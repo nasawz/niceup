@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="443px" height="361px" viewBox="0 0 443 361" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>logo_niceup</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo_niceup">
+            <path d="M126.5,2.53084342 L126.5,273 L309.000028,273 L309.000028,361 L-4.42097494e-14,361 L6.36815991e-15,154.500014 C1.56469363e-14,78.7330554 54.538975,15.7043568 126.5,2.53084342 Z" id="Combined-Shape" fill="#0480D5"></path>
+            <path d="M423.5,261.5 L181.5,261.5 L181.5,101.5 C181.5,34.6735453 235.673545,-19.5 302.5,-19.5 C369.326455,-19.5 423.5,34.6735453 423.5,101.5 L423.5,261.5 Z" id="Combined-Shape" fill="#31C2B2" transform="translate(302.500000, 121.000000) rotate(-270.000000) translate(-302.500000, -121.000000) "></path>
+            <path d="M158,-3.28764793e-14 C239.844721,3.91195546 305.000028,71.5076425 305.000028,154.321167 L305.000028,241.821153 L158,241.821153 L158,-5.68434189e-14 Z" id="Combined-Shape" fill="#353843"></path>
+        </g>
+    </g>
+</svg>

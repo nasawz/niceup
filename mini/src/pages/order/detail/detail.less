@@ -1,0 +1,160 @@
+.order-detail {
+  background-color: #fafafa;
+  padding-bottom: 100px;
+  min-height: 100vh;
+
+  .address {
+    .line-img {
+      height: 6px;
+      width: 100%;
+      display: block;
+    }
+
+    .van-cell {
+      background-color: #fcfcee;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+
+      .name {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.c-white {
+  .van-cell {
+    background-color: white !important;
+  }
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.card-wapper_van-cell_last {
+  .van-cell::after {
+    border-bottom: 0;
+  }
+}
+
+.product-card {
+  position: relative;
+
+  .van-card {
+    background-color: white;
+  }
+
+  .stepper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tags {
+    margin: 4px 0px;
+  }
+
+  &::after {
+    position: absolute;
+    box-sizing: border-box;
+    content: ' ';
+    pointer-events: none;
+    right: 16px;
+    bottom: 0;
+    left: 16px;
+    border-bottom: 1px solid #ebedf0;
+    transform: scaleY(0.5);
+  }
+}
+
+.list {
+  padding-top: 10px;
+  background-color: #fafafa;
+}
+
+.van-cell-group__title {
+  background-color: #fafafa;
+}
+
+.act-copy {
+  height: 100%;
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.state-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-user-select: none;
+  user-select: none;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.state-bar__bar {
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 50px;
+  font-size: 14px;
+  background-color: #fff;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    box-sizing: border-box;
+    content: ' ';
+    pointer-events: none;
+    right: 0;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ebedf0;
+    transform: scaleY(0.5);
+  }
+}
+
+.state-bar__safe {
+  height: constant(safe-area-inset-bottom);
+  height: env(safe-area-inset-bottom);
+}
+
+.state-bar__bar__state {
+  font-weight: 500;
+}
+
+.state-bar__bar__exped {
+  color: green;
+}
+
+.state-bar__bar__payed {
+  color: #ff976a;
+}
+
+.state-bar__bar__exp {
+  display: flex;
+  align-items: center;
+}
+
+.state-bar__text {
+  -webkit-flex: 1;
+  flex: 1;
+  text-align: right;
+  color: #323233;
+  padding-right: 12px;
+}
+
+.sn {
+  .van-cell__value {
+    flex: 5;
+  }
+}

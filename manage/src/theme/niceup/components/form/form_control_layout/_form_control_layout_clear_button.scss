@@ -1,0 +1,5 @@
+.euiFormControlLayoutClearButton {
+  @include euiFormControlLayoutClearIcon(
+    '.euiFormControlLayoutClearButton__icon'
+  );
+}

@@ -1,0 +1,50 @@
+@import '../../global_styling/functions/index';
+
+// Core
+$euiColorPrimary: #1ba9f5;
+$euiColorSecondary: #7de2d1;
+$euiColorAccent: #f990c0;
+$euiColorHighlight: #2e2d25;
+
+// These colors stay the same no matter the theme
+$euiColorGhost: #fff;
+$euiColorInk: #000;
+
+// Status
+$euiColorSuccess: $euiColorSecondary;
+$euiColorWarning: #ffce7a;
+$euiColorDanger: #f66;
+
+// Grays
+$euiColorEmptyShade: #1d1e24;
+$euiColorLightestShade: #25262e;
+$euiColorLightShade: #343741;
+$euiColorMediumShade: #535966;
+$euiColorDarkShade: #98a2b3;
+$euiColorDarkestShade: #d4dae5;
+$euiColorFullShade: #fff;
+
+// Variations from core
+$euiTextColor: #dfe5ef;
+$euiLinkColor: $euiColorPrimary;
+$euiFocusBackgroundColor: #232635;
+$euiShadowColor: #000;
+$euiShadowColorLarge: #000;
+$euiPageBackgroundColor: shade($euiColorLightestShade, 30%);
+$euiTextSubduedColor: makeHighContrastColor($euiColorMediumShade);
+$euiTitleColor: $euiTextColor;
+
+// Contrasty text variants
+$euiColorPrimaryText: makeHighContrastColor($euiColorPrimary);
+$euiColorSecondaryText: makeHighContrastColor($euiColorSecondary);
+$euiColorAccentText: makeHighContrastColor($euiColorAccent);
+$euiColorWarningText: makeHighContrastColor($euiColorWarning);
+$euiColorDangerText: makeHighContrastColor(
+  $euiColorDanger,
+  $euiColorLightShade
+);
+$euiColorSuccessText: $euiColorSecondaryText;
+
+// Charts
+$euiColorChartLines: $euiColorLightShade;
+$euiColorChartBand: tint($euiColorLightestShade, 2.5%);
