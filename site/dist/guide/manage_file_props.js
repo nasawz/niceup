@@ -8,7 +8,7 @@ export default {
         "text": "其他功能",
         "link": "guide/others.html"
     },
-    config: { "root": "/", ...projectConfig, branch: 'HEAD' },
+    config: { "root": "/", ...projectConfig, branch: 'master' },
     'pagePath': "guide/manage_file.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "guide/manage_file.html",
@@ -26,9 +26,11 @@ export default {
             __html: '<p>在系统中所有上传的文件都会自动的归入此模块，这里可以实现对云开发的云存储文件进行管控。</p>\n<h2 id="%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">操作步骤<a class="anchor" href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">§</a></h2>\n<ol>\n<li>\n<p>点击左侧菜单的文件，进入文件列表。</p>\n</li>\n<li>\n<p>点击左侧的复选框可进行批量删除操作，或点击右侧删除按钮对单个文件进行删除。</p>\n</li>\n</ol>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116162015682.png" alt="image-20210116162015682"></p>'
         } }),
     'toc': null,
-    'author': undefined,
-    'contributors': [],
-    'date': "2021-01-15T12:38:38.394Z",
+    'author': "nasa.wang",
+    'contributors': [
+        "nasa.wang"
+    ],
+    'date': "2021-01-16T10:15:57.000Z",
     'updated': null,
     'excerpt': "在系统中所有上传的文件都会自动的归入此模块，这里可以实现对云开发的云存储文件进行管控。 操作步骤 1. 点击左侧菜单的文件，进入文件列表。 2. 点击左侧的复选框可进行批量删除操作，或点击右侧删除按钮对单个文件进行删除。...",
     'cover': "https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116162015682.png",

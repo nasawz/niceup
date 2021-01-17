@@ -1,6 +1,6 @@
 import projectConfig from '/docs/pagic.config.js';
 export default {
-    config: { "root": "/", ...projectConfig, branch: 'HEAD' },
+    config: { "root": "/", ...projectConfig, branch: 'master' },
     'pagePath': "install/environment_help.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "install/environment_help.html",
@@ -20,9 +20,11 @@ export default {
     'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
             __html: '<nav class="toc"><ol><li><a href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">环境变量</a><ol><li><a href="#env_id">ENV_ID</a></li><li><a href="#mini_appid--mini_privatekey">mini_appid &amp; mini_privateKey</a></li><li><a href="#mini_pub_privatekey">mini_pub_privateKey</a></li><li><a href="#private_key_id--private_key">private_key_id &amp; private_key</a></li></ol></li><li><a href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83">配置环境</a></li><li><a href="#%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2">一键部署</a></li></ol></nav>'
         } }),
-    'author': undefined,
-    'contributors': [],
-    'date': "2021-01-15T12:38:38.394Z",
+    'author': "nasa.wang",
+    'contributors': [
+        "nasa.wang"
+    ],
+    'date': "2021-01-16T10:15:57.000Z",
     'updated': null,
     'excerpt': "环境变量 ENV_ID 在微信小程序中开通云开发。开通成功后复制下环境IDENV_ID mini_appid & mini_privateKey 进入“开发管理 > 开发设置 > 开发者ID”，复制下AppID(小程序ID)、AppSecret(小程序密钥) 备用。 mini_pub_privateKe...",
     'cover': "https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210114112602007.png"

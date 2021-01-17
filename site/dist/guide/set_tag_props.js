@@ -8,7 +8,7 @@ export default {
         "text": "创建商品",
         "link": "guide/add_product.html"
     },
-    config: { "root": "/", ...projectConfig, branch: 'HEAD' },
+    config: { "root": "/", ...projectConfig, branch: 'master' },
     'pagePath': "guide/set_tag.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "guide/set_tag.html",
@@ -26,9 +26,11 @@ export default {
             __html: '<p>标签分类是商品的必要属性，在添加商品之前必先对标签进行设置。同时标签也会展示在小程序首页的重要位置。</p>\n<h2 id="%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">操作步骤<a class="anchor" href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">§</a></h2>\n<ol>\n<li>\n<p>点击左侧菜单的标签，进入标签列表。</p>\n</li>\n<li>\n<p>点击创建按钮。</p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210115232011116.png" alt="image-20210115232011116"></p>\n</li>\n<li>\n<p>在弹出框中输入名称、排序信息，点击<strong>保存</strong>。</p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210115232129830.png" alt="image-20210115232129830"></p>\n</li>\n<li>\n<p>标签保存成功后，您可以在标签列表中，看到新创建的标签。</p>\n</li>\n<li>\n<p>新创建的标签默认是不展示的，需要手动点击上架按钮。</p>\n</li>\n</ol>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116000507331.png" alt="image-20210116000507331"></p>\n<ol start="6">\n<li>\n<p>上架成功后可以在小程序端看到新创建的标签。</p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116000752537.png" alt="image-20210116000752537"></p>\n</li>\n</ol>'
         } }),
     'toc': null,
-    'author': undefined,
-    'contributors': [],
-    'date': "2021-01-15T12:38:38.394Z",
+    'author': "nasa.wang",
+    'contributors': [
+        "nasa.wang"
+    ],
+    'date': "2021-01-16T10:15:57.000Z",
     'updated': null,
     'excerpt': "标签分类是商品的必要属性，在添加商品之前必先对标签进行设置。同时标签也会展示在小程序首页的重要位置。 操作步骤 1. 点击左侧菜单的标签，进入标签列表。 2. 点击创建按钮。 3. 在弹出框中输入名称、排序信息，点击保存。 ...",
     'cover': "https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210115232011116.png",

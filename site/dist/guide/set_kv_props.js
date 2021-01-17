@@ -8,7 +8,7 @@ export default {
         "text": "设置运费",
         "link": "guide/set_freight.html"
     },
-    config: { "root": "/", ...projectConfig, branch: 'HEAD' },
+    config: { "root": "/", ...projectConfig, branch: 'master' },
     'pagePath': "guide/set_kv.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "guide/set_kv.html",
@@ -26,9 +26,11 @@ export default {
             __html: '<p>要实现对小程序首页主推荐位的管控。</p>\n<h2 id="%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">操作步骤<a class="anchor" href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">§</a></h2>\n<ol>\n<li>\n<p>点击左侧菜单的推荐，进入推荐列表。</p>\n</li>\n<li>\n<p>点击创建按钮。</p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116121601331.png" alt="image-20210116121601331"></p>\n</li>\n<li>\n<p>在弹出框中输入标题、Banner图片等信息，点击<strong>保存</strong>。<code>注：封面主色建议与上传的Banner保证一致的主色调以达到更好的展示效果</code></p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116121911299.png" alt="image-20210116121911299"></p>\n</li>\n<li>\n<p>推荐保存成功后，您可以在推荐列表中，看到新创建的推荐位。</p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116122026879.png" alt="image-20210116122026879">\n在小程序首页也可看到对应的推荐\n<img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116122124280.png" alt="image-20210116122124280"></p>\n</li>\n</ol>'
         } }),
     'toc': null,
-    'author': undefined,
-    'contributors': [],
-    'date': "2021-01-15T12:38:38.394Z",
+    'author': "nasa.wang",
+    'contributors': [
+        "nasa.wang"
+    ],
+    'date': "2021-01-16T10:15:57.000Z",
     'updated': null,
     'excerpt': "要实现对小程序首页主推荐位的管控。 操作步骤 1. 点击左侧菜单的推荐，进入推荐列表。 2. 点击创建按钮。 3. 在弹出框中输入标题、Banner图片等信息，点击保存。注：封面主色建议与上传的Banner保证一致的主色调以达到更好的展...",
     'cover': "https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116121601331.png",
