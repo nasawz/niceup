@@ -8,7 +8,7 @@ export default {
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
             __html: '<h1>案例展示</h1>\n<h2 id="up%E4%B8%BB%E4%BA%AB%E7%98%A6%E5%8E%A8%E6%88%BF">Up主：享瘦厨房<a class="anchor" href="#up%E4%B8%BB%E4%BA%AB%E7%98%A6%E5%8E%A8%E6%88%BF">§</a></h2>\n<p><a href="https://space.bilibili.com/28469448">https://space.bilibili.com/28469448</a></p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116173940170.png" alt="image-20210116173940170"></p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/gh_e9d13050155d_344%20(2).jpg" alt="gh_e9d13050155d_344 (2)"></p>'
         } }),
-    'head': null,
+    'head': React.createElement("link", { href: "/favicon.ico", rel: "icon", type: "image/png" }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),

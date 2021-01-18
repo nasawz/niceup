@@ -16,7 +16,7 @@ export default {
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
             __html: '<h1>设置运费</h1>\n<p>本程序默认所有的团购商品都是包邮的，根据本地快递站点的报价表，可针对一些特殊的地址增加额外的运费。</p>\n<h2 id="%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">操作步骤<a class="anchor" href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">§</a></h2>\n<ol>\n<li>\n<p>点击左侧菜单的运费，进入运费列表。</p>\n</li>\n<li>\n<p>点击创建按钮。</p>\n</li>\n</ol>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116124532169.png" alt="image-20210116124532169"></p>\n<ol start="3">\n<li>在弹出框中输入省份名称与增加的运费，点击<strong>保存</strong>。</li>\n</ol>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116125748431.png" alt="image-20210116125748431"></p>\n<ol start="4">\n<li>运费保存成功后，您可以在运费列表中，看到新创建的运费。</li>\n</ol>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116125854021.png" alt="image-20210116125854021"></p>\n<ol start="5">\n<li>小程序端在下单时如果收货地址在设置了运费的省内，会额外增加运费。</li>\n</ol>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116130049471.png" alt="image-20210116130049471"></p>'
         } }),
-    'head': null,
+    'head': React.createElement("link", { href: "/favicon.ico", rel: "icon", type: "image/png" }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),

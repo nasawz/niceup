@@ -16,7 +16,7 @@ export default {
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
             __html: '<h1>设置标签</h1>\n<p>标签分类是商品的必要属性，在添加商品之前必先对标签进行设置。同时标签也会展示在小程序首页的重要位置。</p>\n<h2 id="%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">操作步骤<a class="anchor" href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">§</a></h2>\n<ol>\n<li>\n<p>点击左侧菜单的标签，进入标签列表。</p>\n</li>\n<li>\n<p>点击创建按钮。</p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210115232011116.png" alt="image-20210115232011116"></p>\n</li>\n<li>\n<p>在弹出框中输入名称、排序信息，点击<strong>保存</strong>。</p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210115232129830.png" alt="image-20210115232129830"></p>\n</li>\n<li>\n<p>标签保存成功后，您可以在标签列表中，看到新创建的标签。</p>\n</li>\n<li>\n<p>新创建的标签默认是不展示的，需要手动点击上架按钮。</p>\n</li>\n</ol>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116000507331.png" alt="image-20210116000507331"></p>\n<ol start="6">\n<li>\n<p>上架成功后可以在小程序端看到新创建的标签。</p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116000752537.png" alt="image-20210116000752537"></p>\n</li>\n</ol>'
         } }),
-    'head': null,
+    'head': React.createElement("link", { href: "/favicon.ico", rel: "icon", type: "image/png" }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),

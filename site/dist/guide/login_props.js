@@ -13,7 +13,7 @@ export default {
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
             __html: '<h1>登录系统</h1>\n<p>输入之前一键部署时设置的帐号密码登录系统。</p>\n<ul>\n<li>administratorName 管理员账户名，账号名长度需要大于 4 位，支持字母和数字</li>\n<li>administratorPassword 管理员账号密码，8~32位，密码支持字母、数字、字符、不能由纯字母或存数字组成</li>\n</ul>\n<hr>\n<h2 id="%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">操作步骤<a class="anchor" href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">§</a></h2>\n<ol>\n<li>使用电脑输入部署成功后的管理网址，进入登录页面。</li>\n<li>输入帐号密码，回车。</li>\n<li>进入统计页面，可以查看系统整体的商品已经销售情况。</li>\n</ol>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210115231445036.png" alt="image-20210115231445036"></p>'
         } }),
-    'head': null,
+    'head': React.createElement("link", { href: "/favicon.ico", rel: "icon", type: "image/png" }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
