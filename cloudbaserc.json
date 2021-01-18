@@ -25,13 +25,13 @@
           }
         }
       },
-      "docs": {
+      "site": {
         "use": "@cloudbase/framework-plugin-website@1.6.0-alpha.0",
         "inputs": {
           "installCommand": "echo 'Skip Install'",
           "buildCommand": "echo 'npm run build'",
-          "outputPath": "site/dist",
-          "cloudPath": "/docs/",
+          "outputPath": "mini/site",
+          "cloudPath": "/mini-site/",
           "ignore": [
             ".git",
             ".github",
