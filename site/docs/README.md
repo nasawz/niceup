@@ -18,7 +18,11 @@ toc: null
 
 本项目基于腾讯开源项目 [CloudBase Framework](https://github.com/Tencent/cloudbase-framework) [![star](https://img.shields.io/github/stars/Tencent/cloudbase-framework?style=social)](https://github.com/Tencent/cloudbase-framework) 开发部署，支持一键云端部署。
 
-[![](https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https%3A%2F%2Fgithub.com%2Fnasawz%2Fniceup&branch=master)
+
+**管理端**：[![](https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https%3A%2F%2Fgithub.com%2Fnasawz%2Fniceup&branch=master)
+
+**小程序：**[![](https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/67f5a389f1ac6f3b4d04c7256438e44f.svg)](https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&appUrl=https%3A%2F%2Fgithub.com%2Fnasawz%2Fniceup&branch=mini)
+
 
 ### 配置
 
