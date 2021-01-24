@@ -304,12 +304,10 @@
           "default": "/manage/"
         },
         "private_key_id": {
-          "description": "自定义登录密钥ID",
-          "required": true
+          "description": "自定义登录密钥ID"
         },
         "private_key": {
-          "description": "自定义登录密钥Key",
-          "required": true
+          "description": "自定义登录密钥Key"
         }
       }
     }
