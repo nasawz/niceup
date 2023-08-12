@@ -27,7 +27,7 @@
         }
       },
       "manage": {
-        "use": "@cloudbase/framework-plugin-website@1.6.0-alpha.0",
+        "use": "@cloudbase/framework-plugin-website@1.9.6",
         "inputs": {
           "installCommand": "echo 'Skip Install'",
           "buildCommand": "echo 'npm run build'",
