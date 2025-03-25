@@ -1,0 +1,12 @@
+{
+  "name": "submit_order",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "puid": "^1.0.7",
+    "lodash.reduce": "^4.6.0",
+    "lodash.keyby": "^4.6.0",
+    "wx-server-sdk": "latest"
+  }
+}

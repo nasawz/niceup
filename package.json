@@ -1,0 +1,43 @@
+{
+  "name": "niceup",
+  "version": "1.0.0",
+  "description": "up主团购小程序",
+  "scripts": {
+    "pubdocs": "tcb hosting deploy site/dist /docs"
+  },
+  "prettier": "@ss-fe/prettier-config",
+  "lint-staged": {
+    "manage/src/**/*.{ts,tsx,scss,less,md}": [
+      "prettier --write",
+      "git add ."
+    ],
+    "mini/src/**/*.{ts,tsx,scss,less,md}": [
+      "prettier --write",
+      "git add ."
+    ],
+    "cloud/functions/**/*.js": [
+      "prettier --write",
+      "git add ."
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/config-lerna-scopes": "^11.0.0",
+    "@pkgr/utils": "^0.4.5",
+    "@ss-fe/commitlint-config": "^1.0.1",
+    "@ss-fe/husky-config": "^1.0.1",
+    "@ss-fe/prettier-config": "^1.0.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.2",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2"
+  },
+  "keywords": [
+    "groupon",
+    "miniprogram",
+    "wechat"
+  ],
+  "author": "nasawz",
+  "license": "Apache-2.0"
+}

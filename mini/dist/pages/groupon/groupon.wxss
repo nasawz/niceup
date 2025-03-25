@@ -1,0 +1,1 @@
+.index .wapper{padding:300rpx 28rpx;display:flex;align-items:center;justify-content:center;flex-direction:column}.index .wapper .btn{width:80%}.index .wapper .desc{margin-top:40rpx;color:#d8d8d8}

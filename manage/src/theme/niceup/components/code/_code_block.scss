@@ -1,0 +1,283 @@
+.euiCodeBlock {
+  max-width: 100%;
+  display: block;
+  position: relative;
+  background: $euiCodeBlockBackgroundColor;
+  color: $euiCodeBlockColor;
+
+  .euiCodeBlock__pre {
+    @include euiScrollBar;
+    height: 100%;
+    overflow: auto;
+    display: block;
+  }
+
+  .euiCodeBlock__pre--whiteSpacePre {
+    white-space: pre;
+  }
+
+  .euiCodeBlock__pre--whiteSpacePreWrap {
+    white-space: pre-wrap;
+  }
+
+  .euiCodeBlock__code {
+    @include euiCodeFont;
+    display: block;
+    line-height: $euiLineHeight;
+    font-weight: $euiFontWeightRegular;
+    font-size: inherit;
+  }
+
+  .euiCodeBlock__controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .euiCodeBlock__fullScreenButton + .euiCodeBlock__copyButton {
+    margin-top: $euiSizeXS;
+  }
+
+  &.euiCodeBlock-isFullScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .euiCodeBlock__pre {
+      // sass-lint:disable-block no-important
+      padding: $euiSizeXL !important;
+    }
+
+    .euiCodeBlock__controls {
+      top: $euiSizeXS;
+      right: $euiSizeXS;
+    }
+  }
+
+  &.euiCodeBlock--fontSmall {
+    font-size: $euiFontSizeXS;
+  }
+
+  &.euiCodeBlock--fontMedium {
+    font-size: $euiFontSizeS;
+  }
+
+  &.euiCodeBlock--fontLarge {
+    font-size: $euiFontSize;
+  }
+
+  // Storing for re-use the sizing of controls plus extra padding
+  $controlsPadding: $euiSizeL + $euiSizeXS;
+
+  &.euiCodeBlock--hasControls .euiCodeBlock__pre--whiteSpacePreWrap {
+    padding-right: $controlsPadding;
+  }
+
+  &.euiCodeBlock--hasControls .euiCodeBlock__pre--whiteSpacePre {
+    margin-right: $controlsPadding;
+  }
+
+  // Small padding
+  &.euiCodeBlock--paddingSmall {
+    .euiCodeBlock__pre {
+      padding: $euiSizeS;
+    }
+
+    .euiCodeBlock__controls {
+      top: $euiSizeS;
+      right: $euiSizeS;
+    }
+
+    &.euiCodeBlock--hasControls .euiCodeBlock__pre--whiteSpacePreWrap {
+      padding-right: $euiSizeS + $controlsPadding;
+    }
+
+    &.euiCodeBlock--hasControls .euiCodeBlock__pre--whiteSpacePre {
+      margin-right: $euiSizeS + $controlsPadding;
+    }
+  }
+
+  // Medium padding
+  &.euiCodeBlock--paddingMedium {
+    .euiCodeBlock__pre {
+      padding: $euiSize;
+    }
+
+    .euiCodeBlock__controls {
+      top: $euiSize;
+      right: $euiSize;
+    }
+
+    &.euiCodeBlock--hasControls .euiCodeBlock__pre--whiteSpacePreWrap {
+      padding-right: $euiSize + $controlsPadding;
+    }
+
+    &.euiCodeBlock--hasControls .euiCodeBlock__pre--whiteSpacePre {
+      margin-right: $euiSize + $controlsPadding;
+    }
+  }
+
+  // Large padding
+  &.euiCodeBlock--paddingLarge {
+    .euiCodeBlock__pre {
+      padding: $euiSizeL;
+    }
+
+    .euiCodeBlock__controls {
+      top: $euiSizeL;
+      right: $euiSizeL;
+    }
+
+    &.euiCodeBlock--hasControls .euiCodeBlock__pre--whiteSpacePreWrap {
+      padding-right: $euiSizeL + $controlsPadding;
+    }
+
+    &.euiCodeBlock--hasControls .euiCodeBlock__pre--whiteSpacePre {
+      margin-right: $euiSizeL + $controlsPadding;
+    }
+  }
+
+  /*
+   * 1. Size the code against the text its embedded within.
+   */
+  &.euiCodeBlock--inline {
+    display: inline-block;
+    white-space: pre;
+    color: $euiTextColor;
+    font-size: 90%; /* 1 */
+    padding: 0 $euiSizeS;
+    background: $euiCodeBlockBackgroundColor;
+
+    .euiCodeBlock__pre {
+      padding: 0 $euiSizeXS;
+    }
+
+    .euiCodeBlock__code {
+      display: inline;
+      white-space: normal;
+    }
+  }
+
+  &.euiCodeBlock--transparentBackground {
+    background: transparent;
+  }
+
+  .hljs > *::selection {
+    // Only change the color if the variable IS a color
+    // or else no highlight color shows up at all
+    @if type-of($euiCodeBlockSelectedBackgroundColor) == color {
+      background-color: $euiCodeBlockSelectedBackgroundColor;
+    }
+  }
+
+  .hljs-comment,
+  .hljs-quote {
+    color: $euiCodeBlockCommentColor;
+    font-style: italic;
+  }
+
+  .hljs-selector-tag {
+    color: $euiCodeBlockSelectorTagColor;
+    font-weight: bold;
+  }
+
+  .hljs-string,
+  .hljs-subst,
+  .hljs-doctag {
+    color: $euiCodeBlockStringColor;
+  }
+
+  .hljs-number,
+  .hljs-literal,
+  .hljs-regexp,
+  .hljs-variable,
+  .hljs-template-variable,
+  .hljs-tag .hljs-attr {
+    color: $euiCodeBlockNumberColor;
+  }
+
+  .hljs-keyword {
+    color: $euiCodeBlockKeywordColor;
+  }
+
+  .hljs-function > .hljs-title {
+    color: $euiCodeBlockFunctionTitleColor;
+  }
+
+  .hljs-tag {
+    color: $euiCodeBlockTagColor;
+  }
+
+  .hljs-name {
+    color: $euiCodeBlockNameColor;
+  }
+
+  .hljs-type,
+  .hljs-class .hljs-title {
+    color: $euiCodeBlockTypeColor;
+  }
+
+  .hljs-attribute {
+    color: $euiCodeBlockAttributeColor;
+  }
+
+  .hljs-symbol,
+  .hljs-bullet,
+  .hljs-built_in,
+  .hljs-builtin-name,
+  .hljs-link {
+    color: $euiCodeBlockSymbolColor;
+  }
+
+  .hljs-params {
+    color: $euiCodeBlockParamsColor;
+  }
+
+  .hljs-meta {
+    color: $euiCodeBlockMetaColor;
+  }
+
+  .hljs-title {
+    color: $euiCodeBlockTitleColor;
+  }
+
+  .hljs-section {
+    color: $euiCodeBlockSectionColor;
+  }
+
+  .hljs-addition,
+  .hljs-deletion {
+    padding-left: $euiSizeXS;
+    margin-left: -$euiSizeXS;
+  }
+
+  .hljs-addition {
+    box-shadow: -$euiSizeXS 0 $euiCodeBlockAdditionColor;
+  }
+
+  .hljs-deletion {
+    box-shadow: -$euiSizeXS 0 $euiCodeBlockDeletionColor;
+  }
+
+  .hljs-selector-class {
+    color: $euiCodeBlockSelectorClassColor;
+  }
+
+  .hljs-selector-id {
+    color: $euiCodeBlockSelectorIdColor;
+  }
+
+  .hljs-emphasis {
+    font-style: italic;
+  }
+
+  .hljs-strong {
+    font-weight: bold;
+  }
+
+  .hljs-link {
+    text-decoration: underline;
+  }
+}

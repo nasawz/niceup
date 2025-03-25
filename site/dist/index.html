@@ -1,0 +1,40 @@
+<!doctype html><html class="" data-reactroot=""><head>
+<meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"/><meta data-react-helmet="true" name="description" content="一款针对自媒体从业者专门开发的微信团购小程序"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1"/>
+<title data-react-helmet="true">NiceUp</title>
+<link data-react-helmet="true" rel="stylesheet" href="/docs/assets/index.css"/><link data-react-helmet="true" id="prismTheme" rel="stylesheet" href="/docs/assets/prism.css"/>
+<script data-react-helmet="true" >
+    const shouldSetIsDark = document.cookie.includes('is_dark=1') ? true : document.cookie.includes('is_dark=0') ? false : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (shouldSetIsDark) {
+      document.documentElement.classList.add('is_dark');
+      document.getElementById('prismTheme').href = "/docs/assets/prism_tomorrow.css";
+    }
+  </script>
+</head><body><header><h1 class="hide_on_mobile"><a href="/docs/">NiceUp</a></h1><nav><ul><li class="show_on_mobile flex_center"><a class="czs-menu-l" href="#" style="background-image:url(&quot;/docs/assets/czs-menu-l.svg&quot;)"></a></li><li class="show_on_mobile"><h1 class="mobile_title"><a href="/docs/">NiceUp</a></h1></li><li class="hide_on_mobile"><a href="/docs/install/environment_help.html">安装</a></li><li class="hide_on_mobile"><a href="/docs/guide/login.html">用户手册</a></li><li class="hide_on_mobile"><a href="/docs/screenshot/manage.html">演示</a></li><li class="hide_on_mobile"><a href="/docs/showcase.html">案例展示</a></li><li style="flex-grow:1"></li><li class="flex_center"><a class="czs-github-logo" href="https://github.com/nasawz/niceup" target="_blank" style="background-image:url(&quot;/docs/assets/czs-github-logo.svg&quot;)"></a></li><li class="toggle_dark flex_center"><span class="czs-sun" style="background-image:url(&quot;/docs/assets/czs-sun.svg&quot;)"></span><span class="czs-sun-l" style="background-image:url(&quot;/docs/assets/czs-sun-l.svg&quot;)"></span><span class="czs-moon" style="background-image:url(&quot;/docs/assets/czs-moon.svg&quot;)"></span><span class="czs-moon-l" style="background-image:url(&quot;/docs/assets/czs-moon-l.svg&quot;)"></span></li></ul></nav></header><section class="main"><div class="main_article"><article><p align="center" style="padding: 50px 0px">
+  <img height="100px" src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Group.svg" center />
+</p>
+<p>这是一款针对自媒体从业者专门开发的微信团购小程序。</p>
+<h2 id="%E5%BC%80%E5%8F%91%E8%80%85%E4%BF%A1%E6%81%AF">开发者信息<a class="anchor" href="#%E5%BC%80%E5%8F%91%E8%80%85%E4%BF%A1%E6%81%AF">§</a></h2>
+<p>本应用由nasawz开发提供</p>
+<p>微信: wangzhe127</p>
+<h2 id="%E9%83%A8%E7%BD%B2">部署<a class="anchor" href="#%E9%83%A8%E7%BD%B2">§</a></h2>
+<p>本项目基于腾讯开源项目 <a href="https://github.com/Tencent/cloudbase-framework">CloudBase Framework</a> <a href="https://github.com/Tencent/cloudbase-framework"><img src="https://img.shields.io/github/stars/Tencent/cloudbase-framework?style=social" alt="star"></a> 开发部署，支持一键云端部署。</p>
+<p><a href="https://console.cloud.tencent.com/tcb/env/index?action=CreateAndDeployCloudBaseProject&amp;appUrl=https%3A%2F%2Fgithub.com%2Fnasawz%2Fniceup&amp;branch=master"><img src="https://main.qcloudimg.com/raw/67f5a389f1ac6f3b4d04c7256438e44f.svg" alt=""></a></p>
+<h3 id="%E9%85%8D%E7%BD%AE">配置<a class="anchor" href="#%E9%85%8D%E7%BD%AE">§</a></h3>
+<p>查看<a href="./install/environment_help.html">配置详解</a></p>
+<ul>
+<li>ENV_ID 您的云开发环境 Id</li>
+<li>administratorName 管理员账户名，账号名长度需要大于 4 位，支持字母和数字</li>
+<li>administratorPassword 管理员账号密码，8~32位，密码支持字母、数字、字符、不能由纯字母或存数字组成</li>
+<li>deployManagePath 管理端部署路径，如 /manage/，建议使用根路径 /</li>
+<li>private_key_id 自定义登录密钥ID</li>
+<li>private_key 自定义登录密钥Key</li>
+<li>mini_appid 小程序ID</li>
+<li>mini_privateKey 小程序密钥</li>
+<li>mini_pub_privateKey 小程序发布密钥(Base64后)</li>
+</ul>
+<h2 id="%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">注意事项<a class="anchor" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">§</a></h2>
+<ol>
+<li><span style="color:red;">云开发必须是由小程序端创建</span></li>
+<li><span style="color:red;">云开发必须开通按量付费模式</span></li>
+<li>使用支付功能需要在微信开发者工具中绑定商户号并且对退款API进行授权</li>
+</ol></article></div></section><footer>Powered by <a href="https://github.com/xcatliu/pagic" target="_blank">Pagic</a></footer><div class="tools flex_center hide_on_mobile"><a class="czs-angle-up-l button" href="#" style="background-image:url(&quot;/docs/assets/czs-angle-up-l.svg&quot;)"></a></div><script src="https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js"></script><script src="https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js"></script><script type="module" src="/docs/index.js"></script></body></html>
