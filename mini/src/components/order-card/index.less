@@ -1,48 +1,49 @@
 .order-card {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top      : 10PX;
+  margin-bottom   : 10PX;
   background-color: white;
 
   .order-card__title {
-    position: relative;
-    height: 84px;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
+    position       : relative;
+    height         : 84px;
+    padding        : 0 20PX;
+    display        : flex;
+    align-items    : center;
     justify-content: space-between;
 
     &::after {
-      position: absolute;
-      box-sizing: border-box;
-      content: ' ';
+      position      : absolute;
+      box-sizing    : border-box;
+      content       : " ";
       pointer-events: none;
-      right: 16px;
-      bottom: 0;
-      left: 16px;
-      border-bottom: 1px solid #ebedf0;
-      transform: scaleY(0.5);
+      right         : 16PX;
+      bottom        : 0;
+      left          : 16PX;
+      border-bottom : 1PX solid #ebedf0;
+      transform     : scaleY(.5);
     }
 
     .num {
-      font-size: 26px;
+      font-size  : 26px;
       line-height: 26px;
     }
 
     .act {
-      display: flex;
+      display    : flex;
       align-items: center;
     }
   }
 
   .order-card__body {
+
     .product-card {
       position: relative;
 
       .header {
-        display: flex;
-        align-items: center;
+        display        : flex;
+        align-items    : center;
         justify-content: space-between;
-        font-size: 36px;
+        font-size      : 36px;
 
         .title {
           font-size: 26px;
@@ -50,15 +51,17 @@
 
         .price {
           font-size: 26px;
-          color: #909192;
+          color    : #909192;
         }
+
+
       }
 
       .desc {
-        display: flex;
-        align-items: center;
+        display        : flex;
+        align-items    : center;
         justify-content: space-between;
-        font-size: 26px;
+        font-size      : 26px;
 
         .title {
           color: #909192;
@@ -73,7 +76,7 @@
         background-color: white;
 
         .van-card__thumb {
-          width: 180px;
+          width : 180px;
           height: 180px;
         }
 
@@ -83,36 +86,38 @@
       }
 
       .stepper {
-        display: flex;
+        display        : flex;
         justify-content: space-between;
-        align-items: center;
+        align-items    : center;
       }
 
       .tags {
-        margin: 4px 0px;
+        margin: 4PX 0PX;
       }
 
       &::after {
-        position: absolute;
-        box-sizing: border-box;
-        content: ' ';
+        position      : absolute;
+        box-sizing    : border-box;
+        content       : " ";
         pointer-events: none;
-        right: 16px;
-        bottom: 0;
-        left: 16px;
-        border-bottom: 1px solid #ebedf0;
-        transform: scaleY(0.5);
+        right         : 16PX;
+        bottom        : 0;
+        left          : 16PX;
+        border-bottom : 1PX solid #ebedf0;
+        transform     : scaleY(.5);
       }
     }
+
   }
 
   .order-card__foot {
-    position: relative;
-    height: 84px;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
+    position       : relative;
+    height         : 84px;
+    padding        : 0 20PX;
+    display        : flex;
+    align-items    : center;
     justify-content: space-between;
+
 
     // &::before {
     //   position      : absolute;
@@ -127,8 +132,9 @@
     // }
 
     .desc {
-      font-size: 26px;
+      font-size  : 26px;
       line-height: 26px;
+
     }
   }
 }

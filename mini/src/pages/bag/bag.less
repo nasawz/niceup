@@ -1,24 +1,25 @@
 .bag {
-  padding-bottom: 60px;
+  padding-bottom  : 60px;
   background-color: #fafafa;
-  height: 100vh;
+  height          : 100vh;
 
   .van-submit-bar {
-    bottom: 50px;
+    bottom: 50PX;
   }
 
   .van-submit-bar {
+
     &::before {
-      position: absolute;
-      box-sizing: border-box;
-      content: ' ';
+      position      : absolute;
+      box-sizing    : border-box;
+      content       : " ";
       pointer-events: none;
-      top: -50%;
-      right: -50%;
-      bottom: -50%;
-      left: -50%;
-      border: 1px solid #ebedf0;
-      transform: scale(0.5);
+      top           : -50%;
+      right         : -50%;
+      bottom        : -50%;
+      left          : -50%;
+      border        : 1PX solid #ebedf0;
+      transform     : scale(.5);
     }
   }
 
@@ -33,15 +34,16 @@
 
   .van-empty {
     .van-button {
-      width: 160px;
-      height: 40px;
+      width : 160PX;
+      height: 40PX;
     }
   }
 }
 
+
 .list {
-  padding-bottom: 100px;
-  margin-top: 10px;
+  padding-bottom: 100PX;
+  margin-top    : 10PX;
 }
 
 .product-card {
@@ -52,21 +54,21 @@
   }
 
   &::after {
-    position: absolute;
-    box-sizing: border-box;
-    content: ' ';
+    position      : absolute;
+    box-sizing    : border-box;
+    content       : " ";
     pointer-events: none;
-    right: 16px;
-    bottom: 0;
-    left: 16px;
-    border-bottom: 1px solid #ebedf0;
-    transform: scaleY(0.5);
+    right         : 16PX;
+    bottom        : 0;
+    left          : 16PX;
+    border-bottom : 1PX solid #ebedf0;
+    transform     : scaleY(.5);
   }
 
   .stepper {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
+    align-items    : center;
 
     .van-button {
       background-color: white;
@@ -74,6 +76,6 @@
   }
 
   .tags {
-    margin: 4px 0px;
+    margin: 4PX 0PX;
   }
 }

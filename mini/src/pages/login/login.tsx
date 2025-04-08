@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, View } from '@tarojs/components';
+import { View } from '@tarojs/components';
 import Taro from '@tarojs/taro';
 import Toast from '../../components/vant-weapp/toast/toast';
 import { useLogin } from '../../hooks/useLogin';
@@ -16,8 +16,6 @@ export default function Login(props: ILoginProps) {
   const [login, { isLoading }] = useLogin();
 
   let handleGetUserInfo = async e => {
-    console.log(e);
-
     let { userInfo } = e.detail;
     try {
       await login(userInfo);
@@ -41,14 +39,16 @@ export default function Login(props: ILoginProps) {
           需获取公开信息，方便您使用{miniTitle}的全部功能
         </View>
         <View className="btn">
-          <Button
+          <van-button
             loading={isLoading}
+            loadingText="登录中..."
+            block
             type="primary"
             openType="getUserInfo"
             onGetUserInfo={handleGetUserInfo}
           >
             授权公开信息
-          </Button>
+          </van-button>
         </View>
         <View className="btn">
           <van-button
