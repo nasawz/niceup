@@ -1,10 +1,26 @@
-<p align="center">
-  <img height="100px" src="./logo.png" center />
-</p>
-
 # [NiceUp](https://github.com/nasawz/niceup)
 
-这是一款针对自媒体从业者专门开发的微信团购小程序。
+<p align="center">
+  <img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Group.svg" alt="Logo">
+  <h3 align="center">
+    这是一款针对自媒体从业者专门开发的微信团购小程序。
+  </h3>
+  <p align="center">
+    <br />
+    <a href="https://nice-9goo8zpofac7bee9-1304765945.tcloudbaseapp.com/docs/showcase.html">
+      <strong>✨ 在线示例 »</strong>
+    </a>
+    <br />
+    <br />
+    <a href="https://nice-9goo8zpofac7bee9-1304765945.tcloudbaseapp.com/docs/" target="_blank">文档</a>
+    ·
+    <a href="https://nice-9goo8zpofac7bee9-1304765945.tcloudbaseapp.com/docs/guide/login.html" target="_blank">用户手册</a>
+    ·
+    <a href="https://github.com/nasawz/niceup/issues">报告 Bug</a>
+    ·
+    <a href="https://github.com/nasawz/niceup/issues">特性建议</a>
+  </p>
+</p>
 
 ## 开发者信息
 
@@ -49,6 +65,25 @@ npx @cloudbase/cli framework deploy -e 环境id
 
 - [管理端界面](https://nice-9goo8zpofac7bee9-1304765945.tcloudbaseapp.com/docs/screenshot/manage.html)
 - [小程序界面](https://nice-9goo8zpofac7bee9-1304765945.tcloudbaseapp.com/docs/screenshot/mini.html)
+
+## 技术栈
+
+- ❤️ React
+- ❤️ Taro
+- ❤️ TypeScript
+- ❤️ Node.js + [CloudBase](https://cloudbase.net)
+
+## 使用案例
+
+<table>
+  <tr>
+    <td align="center">
+    <a href="https://space.bilibili.com/28469448">
+      <img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/gh_e9d13050155d_344%20(2).jpg" width="100px;" alt="享瘦灵食岛"/>
+      <br /><sub><b>享瘦灵食岛</b></sub></a>
+    </td>
+  </tr>
+</table>
 
 ## 注意事项
 
