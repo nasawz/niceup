@@ -5,7 +5,7 @@ export default {
         "link": "screenshot/manage.html"
     },
     'next': undefined,
-    config: { "root": "/", ...projectConfig, branch: 'HEAD' },
+    config: { "root": "/", ...projectConfig, branch: 'master' },
     'pagePath': "screenshot/mini.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "screenshot/mini.html",
@@ -23,9 +23,11 @@ export default {
             __html: '<div class="table_wrapper"><table>\n<thead>\n<tr>\n<th><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_17-08-34.png" alt="Snipaste_2021-01-16_17-08-34"></th>\n<th><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_17-10-22.png" alt="Snipaste_2021-01-16_17-10-22"></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_17-10-36.png" alt="Snipaste_2021-01-16_17-10-36"></td>\n<td><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_17-11-03.png" alt="Snipaste_2021-01-16_17-11-03"></td>\n</tr>\n<tr>\n<td><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_17-10-00.png" alt="Snipaste_2021-01-16_17-10-00"></td>\n<td><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_17-09-29.png" alt="Snipaste_2021-01-16_17-09-29"></td>\n</tr>\n<tr>\n<td><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_17-11-26.png" alt="Snipaste_2021-01-16_17-11-26"></td>\n<td><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_17-11-44.png" alt="Snipaste_2021-01-16_17-11-44"></td>\n</tr>\n<tr>\n<td><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_17-12-06.png" alt="Snipaste_2021-01-16_17-12-06"></td>\n<td><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_17-12-29.png" alt="Snipaste_2021-01-16_17-12-29"></td>\n</tr>\n</tbody>\n</table></div>'
         } }),
     'toc': null,
-    'author': undefined,
-    'contributors': [],
-    'date': "2021-01-15T12:38:38.394Z",
+    'author': "nasa.wang",
+    'contributors': [
+        "nasa.wang"
+    ],
+    'date': "2021-01-16T10:15:57.000Z",
     'updated': null,
     'excerpt': "",
     'cover': "https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_17-08-34.png",

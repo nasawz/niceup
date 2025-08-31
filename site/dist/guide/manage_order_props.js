@@ -8,7 +8,7 @@ export default {
         "text": "管理文件",
         "link": "guide/manage_file.html"
     },
-    config: { "root": "/", ...projectConfig, branch: 'HEAD' },
+    config: { "root": "/", ...projectConfig, branch: 'master' },
     'pagePath': "guide/manage_order.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "guide/manage_order.html",
@@ -28,9 +28,11 @@ export default {
     'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
             __html: '<nav class="toc"><ol><li><a href="#%E6%93%8D%E4%BD%9C">操作</a><ol><li><a href="#%E5%85%B3%E9%97%AD%E8%AE%A2%E5%8D%95">关闭订单</a></li><li><a href="#%E4%BF%AE%E6%94%B9%E6%94%B6%E8%B4%A7%E4%BA%BA%E4%BF%A1%E6%81%AF">修改收货人信息</a></li><li><a href="#%E5%8F%91%E8%B4%A7">发货</a></li><li><a href="#%E9%80%80%E6%AC%BE">退款</a></li></ol></li></ol></nav>'
         } }),
-    'author': undefined,
-    'contributors': [],
-    'date': "2021-01-15T12:38:38.394Z",
+    'author': "nasa.wang",
+    'contributors': [
+        "nasa.wang"
+    ],
+    'date': "2021-01-16T10:15:57.000Z",
     'updated': null,
     'excerpt': "要实现对的的管控。 操作 点击左侧菜单的订单，进入订单列表。 关闭订单 对未付款的订单可进行关闭操作，点击订单左侧的复选框，再点击上方出现的关闭按钮即可完成关闭订单操作。 修改收货人信息 对已付款的订单，可修改其收货...",
     'cover': "https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116154756164.png",

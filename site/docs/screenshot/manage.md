@@ -2,7 +2,7 @@
 
 ![Snipaste_2021-01-16_16-48-08](https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_16-48-08.png)
 
-![Snipaste_2021-01-16_16-48-57](https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_16-48-57.png)
+<!-- ![Snipaste_2021-01-16_16-48-57](https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_16-48-57.png) -->
 
 ![Snipaste_2021-01-16_16-49-14](https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/Snipaste_2021-01-16_16-49-14.png)
 

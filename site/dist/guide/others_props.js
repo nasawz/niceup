@@ -5,7 +5,7 @@ export default {
         "link": "guide/manage_file.html"
     },
     'next': undefined,
-    config: { "root": "/", ...projectConfig, branch: 'HEAD' },
+    config: { "root": "/", ...projectConfig, branch: 'master' },
     'pagePath': "guide/others.md",
     'layoutPath': "_layout.tsx",
     'outputPath': "guide/others.html",
@@ -25,9 +25,11 @@ export default {
     'toc': React.createElement("aside", { dangerouslySetInnerHTML: {
             __html: '<nav class="toc"><ol><li><a href="#%E5%AF%BC%E8%88%AA">导航</a></li><li><a href="#%E7%BD%AE%E9%A1%B6%E8%8F%9C%E5%8D%95">置顶菜单</a></li><li><a href="#%E4%B8%BB%E9%A2%98">主题</a></li></ol></nav>'
         } }),
-    'author': undefined,
-    'contributors': [],
-    'date': "2021-01-15T12:38:38.394Z",
+    'author': "nasa.wang",
+    'contributors': [
+        "nasa.wang"
+    ],
+    'date': "2021-01-16T10:15:57.000Z",
     'updated': null,
     'excerpt': "导航 点击左侧菜单的锁定按钮可对导航菜单进行锁定、解锁操作。在解锁状态下，点击左上角按钮可切换菜单的显示状态。 解锁 锁定 置顶菜单 点击左侧导航菜单右侧的Pin按钮，可对菜单进行置顶。 主题 本系统内置亮色与暗色两套主...",
     'cover': "https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116164118749.png",
