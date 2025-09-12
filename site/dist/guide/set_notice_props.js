@@ -16,7 +16,7 @@ export default {
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
             __html: '<h1>发布公告</h1>\n<p>要实现对小程序内页公告信息的管控。</p>\n<h2 id="%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">操作步骤<a class="anchor" href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4">§</a></h2>\n<ol>\n<li>\n<p>点击左侧菜单的公告，进入公告列表。</p>\n</li>\n<li>\n<p>点击创建按钮。</p>\n</li>\n</ol>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116143425883.png" alt="image-20210116143425883"></p>\n<ol start="3">\n<li>\n<p>在弹出框中输入公告内容、配色、图标、以及公告需要展示的页面，点击<strong>保存</strong>。</p>\n<p>公告展示页面有：</p>\n<ul>\n<li>提交订单页面</li>\n<li>商品详情页面</li>\n<li>购物车页面</li>\n</ul>\n<p>可分别对这些页面设置公告</p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116144729040.png" alt="image-20210116144729040"></p>\n</li>\n<li>\n<p>公告保存成功后，您可以在公告列表中，看到新创建的公告。</p>\n</li>\n<li>\n<p>新创建的公告默认是不展示的，需要手动点击展示按钮。</p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116144921563.png" alt="image-20210116144921563"></p>\n</li>\n<li>\n<p>展示成功后可在小程序中看到对应的公告。</p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116145108722.png" alt="image-20210116145108722"></p>\n</li>\n</ol>'
         } }),
-    'head': null,
+    'head': React.createElement("link", { href: "/favicon.ico", rel: "icon", type: "image/png" }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),

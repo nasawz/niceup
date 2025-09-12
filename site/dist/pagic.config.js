@@ -5,6 +5,7 @@ export default {
     plugins: ['sidebar', 'prev_next'],
     title: 'NiceUp',
     description: '一款针对自媒体从业者专门开发的微信团购小程序',
+    head: React.createElement("link", { rel: "icon", type: "image/png", href: "/favicon.ico" }),
     nav: [
         {
             text: '安装',

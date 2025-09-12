@@ -1,3 +1,5 @@
+import { React } from 'https://deno.land/x/pagic@v1.1.1/mod.ts';
+
 export default {
   theme: 'docs',
   srcDir: 'docs',
@@ -5,6 +7,7 @@ export default {
   plugins: ['sidebar', 'prev_next'],
   title: 'NiceUp',
   description: '一款针对自媒体从业者专门开发的微信团购小程序',
+  head: <link rel="icon" type="image/png" href="/favicon.ico" />,
   nav: [
     {
       text: '安装',

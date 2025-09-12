@@ -13,7 +13,7 @@ export default {
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
             __html: '<h1>其他功能</h1>\n<h2 id="%E5%AF%BC%E8%88%AA">导航<a class="anchor" href="#%E5%AF%BC%E8%88%AA">§</a></h2>\n<p>点击左侧菜单的锁定按钮可对导航菜单进行锁定、解锁操作。在解锁状态下，点击左上角按钮可切换菜单的显示状态。</p>\n<div class="table_wrapper"><table>\n<thead>\n<tr>\n<th>解锁</th>\n<th>锁定</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116164118749.png" alt="image-20210116164118749"></td>\n<td><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116164210213.png" alt="image-20210116164210213"></td>\n</tr>\n</tbody>\n</table></div>\n<h2 id="%E7%BD%AE%E9%A1%B6%E8%8F%9C%E5%8D%95">置顶菜单<a class="anchor" href="#%E7%BD%AE%E9%A1%B6%E8%8F%9C%E5%8D%95">§</a></h2>\n<p>点击左侧导航菜单右侧的Pin按钮，可对菜单进行置顶。</p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116164405127.png" alt="image-20210116164405127"></p>\n<h2 id="%E4%B8%BB%E9%A2%98">主题<a class="anchor" href="#%E4%B8%BB%E9%A2%98">§</a></h2>\n<p>本系统内置亮色与暗色两套主题，点击右上角的刷子按钮可进行选择切换。</p>\n<p><img src="https://md-1256312109.cos.ap-beijing.myqcloud.com/uPic/image-20210116164444555.png" alt="image-20210116164444555"></p>'
         } }),
-    'head': null,
+    'head': React.createElement("link", { href: "/favicon.ico", rel: "icon", type: "image/png" }),
     'script': React.createElement(React.Fragment, null,
         React.createElement("script", { src: "https://cdn.pagic.org/react@16.13.1/umd/react.production.min.js" }),
         React.createElement("script", { src: "https://cdn.pagic.org/react-dom@16.13.1/umd/react-dom.production.min.js" }),
