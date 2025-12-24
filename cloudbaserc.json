@@ -3,7 +3,7 @@
   "version": "2.0",
   "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
   "framework": {
-    "name": "niceup",
+    "name": "niceup-manage",
     "hooks": {
       "postDeploy": {
         "type": "callFunction",
@@ -39,26 +39,6 @@
             "node_modules",
             "cloudbaserc.js"
           ]
-        }
-      },
-      "mini": {
-        "use": "@cloudbase/framework-plugin-mp",
-        "inputs": {
-          "appid": "{{env.mini_appid}}",
-          "privateKey": "{{env.mini_pub_privateKey}}",
-          "localPath": "./",
-          "ignores": [
-            "node_modules/**/*"
-          ],
-          "deployMode": "preview",
-          "previewOptions": {
-            "desc": "CloudBase Framework 一键预览",
-            "setting": {
-              "es6": false
-            },
-            "qrcodeOutputPath": "./qrcode.jpg",
-            "pagePath": "pages/index/index"
-          }
         }
       },
       "function": {
@@ -150,8 +130,8 @@
               "name": "mini-proxy",
               "timeout": 60,
               "envVariables": {
-                "APPID": "{{env.mini_appid}}",
-                "APPSECRET": "{{env.mini_privateKey}}"
+                "APPID": "mini_appid",
+                "APPSECRET": "mini_privateKey"
               },
               "installDependency": true,
               "handler": "index.main"
@@ -329,18 +309,6 @@
         },
         "private_key": {
           "description": "自定义登录密钥Key",
-          "required": true
-        },
-        "mini_appid": {
-          "description": "小程序ID",
-          "required": true
-        },
-        "mini_privateKey": {
-          "description": "小程序密钥",
-          "required": true
-        },
-        "mini_pub_privateKey": {
-          "description": "小程序发布密钥(Base64后)",
           "required": true
         }
       }
